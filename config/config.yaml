@@ -1,0 +1,374 @@
+app:
+  PLC_IP: 192.168.58.10
+  PLC_PORT: 102
+  PLC_RACK: 0
+  PLC_SLOT: 1
+  laserPrinterFilePath: '{"F":"ODC","DP":"C:\\Users\\JiaYou\\Desktop\\file\\SmartFab\\webModbus\\BslCAD2.orzx"}#'
+  laserPrinterSignaturePath: '{"F": "SPI", "DC": "BslCAD2.orzx","M": 1,"P":[{"N":0,"T":"456","FH":10,"FP":"C:\\Users\\JiaYou\\Desktop\\file\\SmartFab\\webModbus\\static\\upload\\signature.svg","X":-10,"Y":0,"W":10,"H":10,"R":10,"FT":"Arial","FL":0}]}#'
+robot:
+  host: 192.168.58.2
+  port: 502
+plc_signals:
+  HMILaserPrinterCanStartPrint:
+    value: false
+    DBnumber: 20
+    readStart: 10
+    readSize: 1
+    varType: Bool
+    bitNum: 0
+  HMIRobotCatchAUVFromTransferbandToAssembly:
+    value: false
+    DBnumber: 20
+    readStart: 10
+    readSize: 1
+    varType: Bool
+    bitNum: 1
+  HMICameraDetect:
+    value: false
+    DBnumber: 20
+    readStart: 10
+    readSize: 1
+    varType: Bool
+    bitNum: 2
+  HMIAssembleyCanStart:
+    value: false
+    DBnumber: 20
+    readStart: 10
+    readSize: 1
+    varType: Bool
+    bitNum: 3
+  HMIAGVCanForwardMoving:
+    value: false
+    DBnumber: 20
+    readStart: 10
+    readSize: 1
+    varType: Bool
+    bitNum: 4
+  HMIAGVReachedLogistic:
+    value: false
+    DBnumber: 20
+    readStart: 10
+    readSize: 1
+    varType: Bool
+    bitNum: 5
+  HMIAGVCanBackwardMoving:
+    value: false
+    DBnumber: 20
+    readStart: 10
+    readSize: 1
+    varType: Bool
+    bitNum: 6
+  HMIAGVReachedAssembly:
+    value: false
+    DBnumber: 20
+    readStart: 10
+    readSize: 1
+    varType: Bool
+    bitNum: 7
+  HMIRobotCatchAUVFromAGV:
+    value: false
+    DBnumber: 20
+    readStart: 11
+    readSize: 1
+    varType: Bool
+    bitNum: 0
+  HMIRobotCatchAUVFromCurving:
+    value: false
+    DBnumber: 20
+    readStart: 11
+    readSize: 1
+    varType: Bool
+    bitNum: 1
+  HMIRobotCatchTrayFromAGV:
+    value: false
+    DBnumber: 20
+    readStart: 11
+    readSize: 1
+    varType: Bool
+    bitNum: 2
+  HMIRobotCatchAUVFromAssembly:
+    value: false
+    DBnumber: 20
+    readStart: 11
+    readSize: 1
+    varType: Bool
+    bitNum: 3
+  HMIRobotPutDownAUVIntoCurving:
+    value: false
+    DBnumber: 20
+    readStart: 11
+    readSize: 1
+    varType: Bool
+    bitNum: 4
+  HMIRobotPutDownAUVIntoAssembly:
+    value: false
+    DBnumber: 20
+    readStart: 11
+    readSize: 1
+    varType: Bool
+    bitNum: 5
+  HMIRobotPutDownAUVIntoTransferband:
+    value: false
+    DBnumber: 20
+    readStart: 11
+    readSize: 1
+    varType: Bool
+    bitNum: 6
+  HMIRobotPutDownTrayIntoTransferband:
+    value: false
+    DBnumber: 20
+    readStart: 11
+    readSize: 1
+    varType: Bool
+    bitNum: 7
+  mBCurvingMachineCanStart:
+    value: false
+    DBnumber: 20
+    readStart: 12
+    readSize: 1
+    varType: Bool
+    bitNum: 0
+  HMIRobotAxis1Float:
+    value: 0.0
+    DBnumber: 20
+    readStart: 14
+    readSize: 4
+    varType: Real
+    bitNum: 0
+  HMIRobotAxis2Float:
+    value: 0.0
+    DBnumber: 20
+    readStart: 18
+    readSize: 4
+    varType: Real
+    bitNum: 0
+  HMIRobotAxis3Float:
+    value: 0.0
+    DBnumber: 20
+    readStart: 22
+    readSize: 4
+    varType: Real
+    bitNum: 0
+  HMIRobotAxis4Float:
+    value: 0.0
+    DBnumber: 20
+    readStart: 26
+    readSize: 4
+    varType: Real
+    bitNum: 0
+  HMIRobotAxis5Float:
+    value: 0.0
+    DBnumber: 20
+    readStart: 30
+    readSize: 4
+    varType: Real
+    bitNum: 0
+  HMIRobotAxis6Float:
+    value: 0.0
+    DBnumber: 20
+    readStart: 34
+    readSize: 4
+    varType: Real
+    bitNum: 0
+  HMIRobotGripperFloat:
+    value: 0.0
+    DBnumber: 20
+    readStart: 38
+    readSize: 4
+    varType: Real
+    bitNum: 0
+  mRealCNCXAxis:
+    value: 0.0
+    DBnumber: 20
+    readStart: 42
+    readSize: 4
+    varType: Real
+    bitNum: 0
+  mRealCNCYAxis:
+    value: 0.0
+    DBnumber: 20
+    readStart: 46
+    readSize: 4
+    varType: Real
+    bitNum: 0
+  mRealCNCZAxis:
+    value: 0.0
+    DBnumber: 20
+    readStart: 50
+    readSize: 4
+    varType: Real
+    bitNum: 0
+robot_actions:
+  HMIRobotCatchAUVFromAGV:
+    pos1:
+    - -60.474
+    - -121.317
+    - 19.427
+    - -159.342
+    - 89.919
+    - -71.347
+    pos2:
+    - -59.483
+    - -113.0
+    - -6.219
+    - -149.649
+    - 88.998
+    - -71.345
+  HMIRobotPutDownAUVIntoCurving:
+    pos1:
+    - -2.359
+    - -88.924
+    - -54.084
+    - -114.403
+    - 87.353
+    - -112.808
+    pos2:
+    - -14.316
+    - -100.781
+    - -76.108
+    - -95.288
+    - 88.191
+    - -115.134
+  ChildCMDRobotAutoAlignAUV:
+    pos1:
+    - -3.649
+    - -118.259
+    - -55.315
+    - -96.346
+    - 87.398
+    - -112.737
+    pos2:
+    - -8.808
+    - -112.608
+    - -55.315
+    - -109.438
+    - 87.716
+    - -112.879
+    pos3:
+    - -8.707
+    - -90.419
+    - -54.314
+    - -110.445
+    - 87.678
+    - -112.878
+  ChildCMDRobotRecenterTray:
+    pos1:
+    - -71.591
+    - -72.538
+    - -16.107
+    - -164.29
+    - 90.027
+    - -103.917
+    pos2:
+    - -68.217
+    - -101.309
+    - -16.258
+    - -167.687
+    - 83.865
+    - -114.506
+    pos3:
+    - -69.236
+    - -106.357
+    - -16.186
+    - -148.067
+    - 94.784
+    - -129.244
+  HMIRobotCatchTrayFromAGV:
+    pos1:
+    - -52.214
+    - -91.189
+    - -27.296
+    - -137.078
+    - 84.501
+    - -151.648
+    pos2:
+    - -62.237
+    - -104.402
+    - -26.306
+    - -135.265
+    - 92.669
+    - -162.819
+  HMIRobotPutDownTrayIntoTransferband:
+    pos1:
+    - 43.067
+    - -88.775
+    - -27.438
+    - -121.666
+    - 105.089
+    - -89.935
+    pos2:
+    - 94.636
+    - -107.845
+    - -26.664
+    - -135.042
+    - 89.472
+    - -6.325
+  HMIRobotCatchAUVFromCurving:
+    pos1:
+    - -2.359
+    - -88.924
+    - -54.084
+    - -114.403
+    - 87.353
+    - -112.808
+    pos2: []
+  HMIRobotPutDownAUVIntoAssembly:
+    pos1:
+    - 45.874
+    - -101.848
+    - -49.655
+    - -108.524
+    - 82.022
+    - -52.312
+    pos2:
+    - 51.118
+    - -101.903
+    - -50.104
+    - -121.474
+    - 84.132
+    - -45.578
+    pos3:
+    - 45.978
+    - -73.164
+    - -61.876
+    - -111.297
+    - 94.548
+    - -54.427
+  HMIRobotCatchAUVFromAssembly:
+    pos1:
+    - 48.925
+    - -100.359
+    - -43.218
+    - -128.538
+    - 89.819
+    - -48.551
+    pos2: []
+    pos3:
+    - 49.427
+    - -93.485
+    - -49.944
+    - -99.477
+    - 77.044
+    - -54.455
+  HMIRobotPutDownAUVIntoTransferband:
+    pos1:
+    - 88.297
+    - -82.864
+    - -49.833
+    - -110.36
+    - 97.099
+    - -101.297
+    pos2:
+    - 90.184
+    - -93.003
+    - -48.42
+    - -112.981
+    - 94.388
+    - -97.298
+  robot_ip:
+    HOST: 192.168.58.2
+    PORT: 502
+agvs:
+  agv_001:
+    address: 98:DA:B0:10:69:CA
+    characteristic_uuid: 0000ffe2-0000-1000-8000-00805f9b34fb

@@ -1,0 +1,24 @@
+# Project dependencies detected by static analysis
+# You can adjust versions if needed. Install with:
+# python -m pip install -r requirements.txt
+
+bleak
+PyYAML
+fastapi
+uvicorn
+numpy
+opencv-python
+scipy
+websockets
+Pillow
+python-snap7
+svgwrite
+Flask
+flask-socketio
+flask-cors
+python-socketio
+keyboard
+
+# Optional / development
+python-dotenv
+pytest
